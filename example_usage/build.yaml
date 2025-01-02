@@ -1,0 +1,6 @@
+targets:
+  $default:
+    builders:
+      dart_codegen_example|test:
+        generate_for:
+          - lib/library_source.dart

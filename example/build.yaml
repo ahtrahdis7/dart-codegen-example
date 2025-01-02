@@ -1,0 +1,23 @@
+builders:
+  test:
+    import: 'package:dart_codegen_example/builder.dart'
+    builder_factories: ['testBuilder']
+    build_extensions: {'.dart': ['.test.dart']}
+    auto_apply: dependents
+    build_to: source
+  
+  # test_shared_part:
+  #   import: 'package:dart_codegen_example/builder.dart'
+  #   builder_factories: ['testSharedPartBuilder']
+  #   build_extensions: {'.dart': ['test_shared_part.g.dart']}
+  #   auto_apply: dependents
+  #   build_to: cache
+  #   applies_builders: ['source_gen|combining_builder']
+
+  # test_shared_part_2:
+  #   import: 'package:dart_codegen_example/builder.dart'
+  #   builder_factories: ['testSharedPartBuilder2']
+  #   build_extensions: {'.dart': ['test_shared_part_2.g.dart']}
+  #   auto_apply: dependents
+  #   build_to: cache
+  #   applies_builders: ['source_gen|combining_builder']
