@@ -1,13 +1,14 @@
-class ConfigGenerator {
+class Config {
   final String key;
-  final String propertyKey;
 
-  const ConfigGenerator(this.key, this.propertyKey);
+  const Config({this.key = ""});
 }
 
-class ConfigGenerator2 {
-  final String key;
+class ConfigKey {
   final String propertyKey;
+  final String defaultValue;
+  final String source;
 
-  const ConfigGenerator2(this.key, this.propertyKey);
+  const ConfigKey(
+      {this.propertyKey = "", this.defaultValue = "null", this.source = ""});
 }

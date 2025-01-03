@@ -9,14 +9,6 @@ targets:
         generate_for:
           - lib/*.dart
 
-      dart_codegen_example|test_shared_part_2:
-        generate_for:
-          - lib/*.dart
-      
-      dart_codegen_example|test_shared_part_3:
-        generate_for:
-          - lib/library_source.dart
-
       # source_gen|combining_builder:
       #   options:
       #     ignore_for_file:

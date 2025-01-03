@@ -9,6 +9,6 @@ builders:
   test_shared:
     import: 'package:dart_codegen_example/builder.dart'
     builder_factories: ['testSharedPartBuilder']
-    build_extensions: {'.dart': ['remote_config.g.dart']}
+    build_extensions: {'.dart': ['remote_config.dart']}
     auto_apply: dependents
     build_to: source

@@ -11,7 +11,7 @@ Builder testBuilder(BuilderOptions options) => LibraryBuilder(
       generatedExtension: '.test.dart',
     );
 
-Builder testSharedPartBuilder(BuilderOptions options) => SharedPartBuilder(
-      [AnnotationGenerator()],
-      'remote_config',
+Builder testSharedPartBuilder(BuilderOptions options) => LibraryBuilder(
+      ConfigGenerator(),
+      generatedExtension: '.remote_config.dart',
     );
