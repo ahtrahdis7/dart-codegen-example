@@ -5,3 +5,9 @@ abstract class TestConfig2 {
   int get pollCount;
   bool get isEnabled;
 }
+
+@Config()
+abstract class TestConfigMyTestAbc {
+  int get pollCount;
+  bool get isEnabled;
+}
